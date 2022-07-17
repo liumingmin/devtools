@@ -3,3 +3,10 @@ git config --global https.proxy "socks5://127.0.0.1:10808"
 
 git config --global --unset http.proxy
 git config --global --unset https.proxy
+
+
+
+set http_proxy=http://127.0.0.1:10808
+set https_proxy=http://127.0.0.1:10808
+
+go env -w GOPROXY=https://goproxy.cn,direct 
